@@ -1,0 +1,101 @@
+<calendar bindDayChange="dateChange"></calendar>
+<view class="swiper-tab">
+  <block wx:for="{{courses}}" wx:key="name">
+    <view class="swiper-tab-item {{currentTab==index?'active':''}}" data-current="{{index}}" bindtap="clickTab">
+      {{item.name}}
+    </view>
+  </block>
+</view>
+<swiper current="{{currentTab}}" bindchange="swiperTab">
+  <!-- 全部课程 -->
+  <swiper-item>
+    <block bindtap="details" wx:for="{{allCourses}}" wx:key="name">
+      <view bindtap="details" class='block1'>
+        <view class="block-left">
+          <image src="{{item.URL}}"></image>
+        </view>
+        <view class="block-right">
+          <view class="block-title">{{item.title}}</view>
+          <view class="row">
+            <view>
+              <view class="block-time">{{item.time}}</view>
+              <view>{{item.teacher}}</view>
+            </view>
+            <button class="block-button" plain
+              style="width:80rpx; height:50rpx; font-size: 25rpx; padding: 0; line-height: 50rpx; margin: 0;">预约</button>
+          </view>
+          <view>难度 {{item.difficulty}}</view>
+        </view>
+      </view>
+    </block>
+  </swiper-item>
+
+  <!-- 团课 -->
+  <swiper-item>
+    <block wx:for="{{League}}" wx:key="name">
+      <view bindtap="details" class='block1'>
+        <view class="block-left">
+          <image src="{{item.URL}}"></image>
+        </view>
+        <view class="block-right">
+          <view class="block-title">{{item.title}}</view>
+          <view class="row">
+            <view>
+              <view class="block-time">{{item.time}}</view>
+              <view>{{item.teacher}}</view>
+            </view>
+            <button class="block-button" plain
+              style="width:80rpx; height:50rpx; font-size: 25rpx; padding: 0; line-height: 50rpx; margin: 0;">预约</button>
+          </view>
+          <view>难度 {{item.difficulty}}</view>
+        </view>
+      </view>
+    </block>
+  </swiper-item>
+
+  <!-- vip -->
+  <swiper-item>
+    <block wx:for="{{vip}}" wx:key="name">
+      <view bindtap="details" class='block1'>
+        <view class="block-left">
+          <image src="{{item.URL}}"></image>
+        </view>
+        <view class="block-right">
+          <view class="block-title">{{item.title}}</view>
+          <view class="row">
+            <view>
+              <view class="block-time">{{item.time}}</view>
+              <view>{{item.teacher}}</view>
+            </view>
+            <button class="block-button" plain
+              style="width:80rpx; height:50rpx; font-size: 25rpx; padding: 0; line-height: 50rpx; margin: 0;">预约</button>
+          </view>
+          <view>难度 {{item.difficulty}}</view>
+        </view>
+      </view>
+    </block>
+  </swiper-item>
+
+  <!-- 私教 -->
+  <swiper-item>
+    <block wx:for="{{Private}}" wx:key="name">
+      <view bindtap="details" class='block1'>
+        <view class="block-left">
+          <image src="{{item.URL}}"></image>
+        </view>
+        <view class="block-right">
+          <view class="block-title">{{item.title}}</view>
+          <view class="row">
+            <view>
+              <view class="block-time">{{item.time}}</view>
+              <view>{{item.teacher}}</view>
+            </view>
+            <button class="block-button" plain
+              style="width:80rpx; height:50rpx; font-size: 25rpx; padding: 0; line-height: 50rpx; margin: 0;">预约</button>
+          </view>
+          <view>难度 {{item.difficulty}}</view>
+        </view>
+      </view>
+    </block>
+  </swiper-item>
+</swiper>

@@ -1,0 +1,29 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/bookcourse/bookcourse",
+          "pathName": "pages/bookcourse/bookcourse",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/coursedetails/coursedetails",
+          "pathName": "pages/coursedetails/coursedetails",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

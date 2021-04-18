@@ -1,0 +1,51 @@
+.dates {
+  display: flex;
+}
+
+.dates .moons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.dates .moon {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 45rpx;
+  color: #434343;
+  font-weight: 500;
+}
+
+.dates .days {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dates .days .day {
+
+  box-sizing: border-box;
+  padding: 4px 1px;
+  font-size: 35rpx;
+  border-radius: 0;
+  text-align: center;
+  background-color: inherit;
+  font-weight: 400;
+  color: #434343;
+}
+
+.dates .days .day:active {
+  background-color: #eee;
+  font-size: 40rpx;
+  color: #434343;
+  font-weight: 500;
+  border-radius: 4px 4px 0 0;
+}
+
+.dates .days .active {
+  font-size: 40rpx;
+  color: #434343;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 1rpx solid #434343;
+}

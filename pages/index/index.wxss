@@ -1,0 +1,119 @@
+/* 轮播图 */
+.maxBox {
+  width: 100%;
+  height: 100%;
+}
+.swiper swiper  {
+  width: 100%;
+  height:calc(750rpx*360/750);
+}
+.swiper image {
+  width: 100%;
+}
+
+.head-textbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 220rpx;
+  background-color: #b79fed;
+  background-image: linear-gradient(135deg, #766ec4,#b79fed);
+  color: #ffffff;
+  justify-content: center;
+  border-top: 20rpx solid #f4f4f4;
+  border-bottom: 20rpx solid #f4f4f4;
+  border-radius: 5rpx;
+  overflow: hidden;
+}
+.head-h1 {
+  font-size: 60rpx;
+  margin-bottom: 25rpx;
+}
+.head-text {
+  font-size: 30rpx;
+}
+/* 活动 */
+.activity {
+  background-color: #b79fed;
+  height: 300rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2%;
+}
+.title {
+  font-size: 55rpx;
+}
+.activity-text {
+  font-size: 35rpx;
+}
+.video {
+  background-color: #fff;
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+.video video {
+  width: 100%;
+  height: 390rpx;
+  border-radius: 15rpx;
+}
+.content {
+  width: 100%;
+  background-color: #f4f4f4;
+}
+.content-1 {
+  display: flex;
+  height: 555rpx;
+  flex-direction: row;
+  background-image: url(http://353976.s81i.faiusr.com/4/108/AFEIuM0VEAQYACCAq-HdBSjxiaWqAjDOBDjtA0Bs.png);
+  background-size: 85%;
+  background-repeat: no-repeat;
+  background-position-x: 230rpx;
+}
+.content-1 view {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 15rpx;
+}
+.con-h1 {
+  font-size: 50rpx;
+  margin-bottom: 45rpx;
+  margin-top: 120rpx;
+}
+.con-h6 {
+  font-size: 27rpx;
+}
+
+.content-2 {
+  display: flex;
+  height: 555rpx;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: url(http://353976.s81i.faiusr.com/4/108/AFEIuM0VEAQYACCup-HdBSignO3aBTCrAzjkAkBs.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position-x: -80rpx;
+  text-align: right;
+}
+.con-right {
+  padding-right: 15px;
+}
+.footer {
+  width: 100%;
+  padding: 30rpx 28rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.footer view image {
+  border-radius: 10rpx 10rpx 0 0;
+  width: 100%;
+  display: block;
+}
+.foot-text {
+  height: 95rpx;
+  display: flex;
+  align-items: center;
+  padding-left: 20rpx;
+  box-shadow: 0px 3px 10px 0px grey;
+}

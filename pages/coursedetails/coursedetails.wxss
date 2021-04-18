@@ -1,0 +1,87 @@
+.header {
+  width: 100%;
+  border-top: 1rpx solid #eee;
+ padding: 25rpx;
+ box-sizing: border-box;
+  border-bottom: 20rpx solid #eee;
+}
+.swiper swiper {
+  padding: 0;
+ width: 100%;
+ height: calc(750rpx*380/690);
+ padding-bottom: 44rpx;
+ box-sizing: border-box;
+}
+.swiper image {
+  width: 100%;
+  border-radius: 5rpx;
+}
+.head-t-h3 {
+  font-size: 38rpx;
+  font-weight: 700;
+  margin-bottom: 18rpx;
+}
+.portrait {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.portrait image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+.teacher {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx;
+  box-sizing: border-box;
+  border-bottom: 20rpx solid #eee;
+}
+.content {
+  border-bottom: 20rpx solid #eee;
+}
+.time,.addr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 110rpx;
+  padding: 35rpx;
+  box-sizing: border-box;
+  border-bottom: 2rpx solid #eee;
+}
+.time-img,.addr-img {
+  display: flex;
+  align-items: center;
+  color: #7b7e82;
+}
+.time-img image,.addr-img image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 15rpx;
+}
+.introduce {
+  padding: 35rpx;
+}
+.introduce-title {
+  font-size: 38rpx;
+  font-weight: 700;
+  color: #7b7e82;
+  margin-bottom: 38rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.introduce-title view {
+  width: 18rpx;
+  height: 49rpx;
+  background-color: #000;
+  margin-right: 35rpx;
+}
+.introduce-text {
+  line-height: 48rpx;
+}

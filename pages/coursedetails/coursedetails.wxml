@@ -1,0 +1,56 @@
+<view class="box">
+  <view class="header">
+    <view class="swiper">
+      <swiper indicator-dots="true" indicator-active-color="#fff">
+        <swiper-item>
+          <image mode="widthFix" src="http://353976.s81i.faiusr.com/2/108/AFEIuM0VEAIYACDevPHdBSig05HBAjCyBTj8AkBs.jpg">
+          </image>
+        </swiper-item>
+      </swiper>
+    </view>
+    <view class="head-text">
+      <view class="head-t-h3">纤体瑜伽 SLIMMING</view>
+      <view>难度 3</view>
+    </view>
+  </view>
+  <view class="teacher">
+    <view class="portrait">
+      <image src="http://434540.s81i.faiusr.com/2/101/AFEI7MIaEAIYACDrqc3jBSjqpfT6AjDuBTjoAkBl.jpg"></image>
+      <view>Angel</view>
+    </view>
+    <view>
+      <button plain style="width: 180rpx;">
+        查看
+      </button>
+    </view>
+  </view>
+  <view class="content">
+    <view class="time">
+      <view class="time-img">
+        <image src="/pages/img/yu.png"></image>
+        时间
+      </view>
+      <view>
+        4月19日 星期一 09:00 ~ 10:00
+      </view>
+    </view>
+    <view class="addr">
+      <view class="addr-img">
+        <image src="/pages/img/addr2.png"></image>
+        地址
+      </view>
+      <view>
+        >
+      </view>
+    </view>
+    <view class="introduce">
+      <view class="introduce-title">
+        <view></view>
+        课程介绍
+      </view>
+      <view class="introduce-text">
+        纤体瑜伽形体总的来说有四大功能，即调理、排毒、减脂和美感。瑜伽的身体姿势能伸展全身的肌肉、韧带，塑造优美的身体线条，保持苗条柔韧的身材;同时由于注重呼吸的方式与调节，也就具有了非常好的医疗健身功效
+      </view>
+    </view>
+  </view>
+</view>

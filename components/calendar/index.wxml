@@ -1,0 +1,22 @@
+<view>
+  <view class="dates">
+    <view class="moons">
+      <block wx:for="{{dates}}" wx:for-item="date"  wx:for-index='i'>
+        <view class="split">
+          <view class="moon">{{date.moon}}月</view>
+          <view class="days">
+            <block wx:for="{{date.days}}" wx:for-index='j'>
+              <button bindtap="_calendarDayTap" data-moon="{{date.moon}}" data-day="{{item}}" 
+              data-moon-index="{{i}}" data-day-index="{{j}}"
+                class="day {{item.checked==true?'active':''}}"
+                style="width:{{dayWidth}}px;background-color:{{index}};">
+                {{item.day}}
+              </button>
+            </block>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <slot></slot>
+</view>

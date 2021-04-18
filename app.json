@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/my/my",
+    "pages/bookcourse/bookcourse",
+    "pages/coursedetails/coursedetails",
+    "pages/course/course",
+    "pages/activityPage/activityPage",
+    "pages/member/member",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "selectedColor": "#000000",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "/pages/img/my.png",
+      "selectedIconPath": "/pages/img/_my.png",
+      "text": "首页"
+    },{
+      "pagePath": "pages/bookcourse/bookcourse",
+      "iconPath": "/pages/img/yu.png",
+      "selectedIconPath": "/pages/img/_yu.png",
+      "text": "预约课程"
+    },{
+      "pagePath": "pages/my/my",
+      "iconPath": "/pages/img/shou.png",
+      "selectedIconPath": "/pages/img/_shou.png",
+      "text": "我的"
+    }
+  ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+
+}

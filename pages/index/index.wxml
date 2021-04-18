@@ -1,0 +1,61 @@
+<view class="maxBox">
+  <view class="header">
+    <view class="swiper">
+      <swiper indicator-dots="true" autoplay="true" interval="2300" circular="true">
+        <swiper-item>
+          <image mode="widthFix" src="http://434540.s81i.faiusr.com/2/101/AFEI7MIaEAIYACDrqc3jBSjqpfT6AjDuBTjoAkBl.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+          <image mode="widthFix" src="http://434540.s81i.faiusr.com/2/101/AFEI7MIaEAIYACC6kdLkBSjRt8eJAjDuBTjoAkBl.jpg"></image>
+        </swiper-item>
+      </swiper>
+    </view>
+    <view class="head-textbox">
+      <view class="head-h1">
+        精编课程内容
+      </view>
+      <view class="head-text">
+        每天基础练习 . 导师精编计划 . 瑜伽私教指导
+      </view>
+    </view>
+  </view>
+  <view class="video">
+    <video show-center-play-btn="true" poster="http://353976.s81i.faiusr.com/2/108/AFEIuM0VEAIYACCgp-HdBSiIzdt0MLIFOIUDQGw.jpg" src="http://qz.faisys.com/image/default_video.mp4"></video>
+  </view>
+  <view class="content">
+    <view class="content-1">
+      <view>
+        <view class="con-h1">
+          瑜伽教练<br/>
+          专业指导
+        </view>
+        <view class="con-h6">
+          专业导师每天教练指导<br/>
+          快速见证华丽蜕变
+        </view>
+      </view>
+      <view>
+      </view>
+    </view>
+    <view class="content-2">
+      <view>
+      </view>
+      <view class="con-right">
+        <view class="con-h1">
+          精选瑜伽装备
+        </view>
+        <view class="con-h6">
+          致力给你较好的瑜伽装备
+        </view>
+      </view>
+    </view>
+    <view class="footer">
+      <view>
+        <image mode="widthFix" src="http://434540.s81i.faiusr.com/2/101/AFEI7MIaEAIYACCdgIbmBSi17c-xAjDuBTiQA0Bl.jpg"></image>
+      </view>
+      <view class="foot-text">
+        环境展示
+      </view>
+    </view>
+  </view>
+</view>
