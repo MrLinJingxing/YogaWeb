@@ -1,0 +1,11 @@
+.content {
+  padding: 0 30rpx;
+}
+.line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80rpx;
+  border-bottom: 1rpx solid #eee;
+}

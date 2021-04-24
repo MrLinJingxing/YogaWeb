@@ -1,0 +1,137 @@
+.header {
+  padding: 1.2vh 3vw;
+}
+
+.header .searchBar {
+  position: relative;
+  padding-right: 6vw;
+  display: flex;
+  align-items: center;
+}
+
+.header .searchBar input {
+  box-sizing: border-box;
+  border-radius: 5vh;
+  height: 5vh;
+  font-size: 32rpx;
+  color: darkgray;
+  flex: 1;
+  border: lightgray 2px solid;
+}
+
+.header .searchBar .search-icon {
+  width: 32rpx;
+  height: 32rpx;
+  position: absolute;
+  left: 4vw;
+}
+
+.header .searchBar .close-icon {
+  width: 32rpx;
+  height: 32rpx;
+  position: absolute;
+  right: 9vw;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.left-text {
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+}
+
+.content {
+  position: relative;
+  height: 92.6vh;
+}
+
+.content .search-words-view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #fff;
+}
+
+.content .scroll-words-view {
+  height: 100%;
+}
+
+.content .scroll-words-view .title{
+  background-color: #eee;
+  color: black;
+  font-size: 34rpx;
+  padding: 12rpx 0;
+  text-indent: 1em;
+}
+
+.content .scroll-words-view .word-info{
+  padding: 28rpx 30rpx;
+  box-sizing: border-box;
+  font-size: 34rpx;
+}
+
+.content .scroll-words-view .word-info+.word-info{
+  border-top: #eee 1px solid;
+}
+
+/* MOD 搜索显示框样式 */
+
+.content .search-words-view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+.content .search-words-view .word-info{
+  padding: 28rpx 30rpx;
+  box-sizing: border-box;
+  font-size: 34rpx;
+  border-bottom: lightgray 1px solid;
+}
+
+/* MOD 侧边字母条样式 */
+
+.sideBar {
+  top: 0;
+  right: 4px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+}
+
+.sideBar .wordsBar {
+  box-sizing: border-box;
+  padding: 8px 0;
+  height: 98%;
+  display: flex;
+  width: 5vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5vw;
+}
+
+.sideBar .wordsBar .haveWord {
+  color: lightgray;
+  font-weight: 500;
+}
+
+.sideBar .wordsBar .emptyWord {
+  color: gray;
+}
+
+.sideBar .wordsBar .emptyHidden {
+  display: none;
+}
+
+.sideBar .wordsBar .word {
+  text-align: center;
+  font-size: 28rpx;
+}

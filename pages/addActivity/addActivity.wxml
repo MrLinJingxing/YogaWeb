@@ -1,0 +1,37 @@
+<view class="box">
+  <view class="line">
+    <view>活动名称</view>
+    <view><input type="text" placeholder="必填"/></view>
+  </view>
+  <view class="line">
+    <view>活动商品</view>
+    <view>请选择 ></view>
+  </view>
+  <view class="line">
+    <view>商品图片</view>
+    <view>请选择 ></view>
+  </view>
+  <view class="line">
+    <view>活动开始时间</view>
+    <view>请选择 ></view>
+  </view>
+  <view class="line">
+    <view>活动结束时间</view>
+    <view>请选择 ></view>
+  </view>
+  <view class="line">
+    <view>秒杀价（元）</view>
+    <view><input type="number" placeholder="必填"/></view>
+  </view>
+  <view class="line">
+    <view>库存（个）</view>
+    <view><input type="number" placeholder="必填"/></view>
+  </view>
+  <view class="line">
+    <view>已售数量（个）</view>
+    <view><input type="text" placeholder="0"/></view>
+  </view>
+  <view class="button">
+    <button type="primary" id="width">发布</button>
+  </view>
+</view>

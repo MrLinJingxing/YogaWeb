@@ -1,0 +1,21 @@
+<view class="box">
+  <block wx:for="{{array}}">
+    <view class="block">
+      <view class="courseName">{{item.courseName}}</view>
+      <view class="b-row">
+        <view><image src="{{item.url}}"></image></view>
+        <view class="b-c">
+          <view class="row">
+            <view class="margin-right">{{item.name}}</view>
+            <view>{{item.phone}}</view>
+          </view>
+          <view>{{item.addr}}</view>
+        </view>
+      </view>
+      <view class="row border-top">
+        <view>{{item.time}}</view>
+        <view>操作人 {{item.operatoor}}</view>
+      </view>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,100 @@
+<view class="box">
+  <view class="">
+    <view class="line height">
+      <view>课程类型</view>
+      <view>
+        <picker bindchange="bindPickerChange3" value="{{index4}}" range="{{course}}">
+          <button plain id="width">{{courseText}}</button>
+        </picker>
+      </view>
+    </view>
+    <view class="line height">
+      <view>课程名</view>
+      <view><input type="text" /></view>
+    </view>
+    <view class="line height">
+      <view>日期</view>
+      <view>
+        <picker class="weui-btn" mode="date" value="{{date}}" start="{{dateStart}}" end="{{dateEnd}}"
+          bindchange="bindDateChange">
+          <button plain id="width">{{dateButton}}</button>
+        </picker>
+      </view>
+    </view>
+    <view class="line height">
+      <view>时间</view>
+      <view>
+        <picker class="weui-btn" mode="time" value="{{time}}" start="09:00" end="00:00" bindchange="bindTimeChange">
+          <button plain id="width">{{timeText}}</button>
+        </picker>
+      </view>
+    </view>
+    <view class="line height">
+      <view>课时</view>
+      <view>
+        <picker bindchange="bindPickerChange" value="{{index2}}" range="{{array}}">
+          <button plain id="width">{{arrayText}}</button>
+        </picker>
+      </view>
+    </view>
+    <view class="line height">
+      <view>老师</view>
+      <view>
+        <picker bindchange="bindPickerChange2" value="{{index3}}" range="{{teacher}}">
+          <button plain id="width">{{teacherText}}</button>
+        </picker>
+      </view>
+    </view>
+    <view class="line height">
+      <view>难度</view>
+      <view class="iine-difficulty">
+        <block wx:for="{{stars}}">
+          <image class="star-image" style="left: {{item*100}}rpx" src="{{key > item ? selectedSrc : normalSrc}}"
+            bindtap="select" data-key="{{item+1}}">
+          </image>
+        </block>
+      </view>
+    </view>
+    <view class="line height">
+      <view>最大人数</view>
+      <view><input type="text" /></view>
+    </view>
+    <view class="line height">
+      <view>几人开课</view>
+      <view><input type="text" /></view>
+    </view>
+    <view class="line height">
+      <view>地点</view>
+    </view>
+    <view class="line fold">
+      <view class="li" data-index="3" bindtap='changeToggle'>
+        <view class="left">会员卡限制</view>
+        <view class="right red">
+          <button id="width" plain style="margin: 0;">选择会员卡</button>
+          <text class="iconfont {{selectedFlag[3]?'icon-shangjiantou':'icon-xiala'}}"> </text>
+        </view>
+      </view>
+      <view class="li2" hidden="{{!selectedFlag[3]}}">
+        <checkbox-group bindchange="checkboxChange">
+          <label class="weui-cell weui-check__label" wx:for="{{items}}" wx:key="{{item.value}}">
+            <view class="weui-cell__hd">
+              <checkbox value="{{item.value}}" checked="{{item.checked}}" />
+            </view>
+            <view class="weui-cell__bd" style="margin-left: 15rpx">{{item.name}}</view>
+          </label>
+        </checkbox-group>
+      </view>
+    </view>
+    <view class="line height">
+      <view>扣费次数</view>
+      <view><input type="text" /></view>
+    </view>
+    <view class="line cd">
+      <view>课程简介</view>
+      <view>
+        <textarea>
+        </textarea>
+      </view>
+    </view>
+  </view>
+</view>

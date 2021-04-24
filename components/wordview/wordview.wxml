@@ -1,0 +1,38 @@
+<view>
+  <view class="header">
+    <view class="searchBar">
+      <input type="text" class="{{isSearchFocus?'left-text':'center-text'}}" bindfocus="_searchFocusEvent" bindblur="_searchFocusEvent" bindinput="_searchChange" placeholder="{{searchPlaceHolder}}" value="{{searchText}}" />
+      <image class="search-icon" src="./img/search_icon.png"/>
+      <image class="close-icon" bindtap="_searchCloseTap" src="./img/close_icon.png" style="display:{{isSearchFocus||searchWordsObj.content!=undefined?'block':'none'}};" />
+    </view>
+  </view>
+  <view class="content">
+    <scroll-view scroll-y="true" id="scroll-words-view" scroll-into-view="{{scrollViewId}}" scroll-with-animation="true" class="scroll-words-view">
+      <block wx:for="{{words}}" wx:for-item="words">
+        <block wx:if="{{words.content.length!=0}}">
+          <view class="title" id="href-{{words.title}}">{{words.title}}</view>
+          <block wx:for="{{words.content}}" wx:for-item="word" wx:for-index="i">
+            <view id="href-{{words.title}}-{{i}}-{{word.word}}" class="word-info" data-wordinfo="{{word}}" bindtap="_wordInfoTap">{{word.word}}</view>
+          </block>
+        </block>
+      </block> 
+    </scroll-view>
+    <block wx:if="{{searchWordsObj.content!=undefined}}">
+      <scroll-view class="search-words-view" scroll-y="true">
+        <block wx:for="{{searchWordsObj.content}}" wx:for-item="word" wx:for-index="i">
+          <view id="href_search-{{searchWordsObj.title}}-{{i}}-{{word.word}}" class="word-info" data-wordinfo="{{word}}" bindtap="_wordInfoTap">{{word.word}}</view>
+        </block>
+      </scroll-view>
+    </block>
+  </view>
+  <block wx:if="{{searchWordsObj.content==undefined}}">
+    <view class="sideBar">
+      <view class="wordsBar">
+        <block wx:for="{{words}}" wx:for-item="word">
+          <view bindtap="{{word.content.length!=0?'_sideBarWordTap':''}}" data-word="{{word.title}}" class="word {{word.content.length!=0?'haveWord':hideEmpty?'emptyHidden emptyWord':'emptyWord'}}">
+            {{word.title}}</view>
+          </block>
+        </view>
+      </view>
+    </block>
+</view>

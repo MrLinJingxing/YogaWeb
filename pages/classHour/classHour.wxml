@@ -1,0 +1,34 @@
+<!-- 课时费统计 -->
+<view class="box">
+  <view class="header">
+    <view>日期</view>
+    <view>筛选</view>
+  </view>
+    <view class="c-top">
+      <block wx:for="{{array}}" wx:key="this">
+        <view class="block">
+          <view>{{item.index}}节</view>
+          <view>{{item.course}}</view>
+        </view>
+      </block>
+    </view>
+</view>
+<scroll-view class="scroll" scroll-x="true">
+  <view class="line line-height">
+    <block wx:for="{{array2}}" wx:key="this">
+      <view class="row">
+        <view>{{item}}</view>
+      </view>
+    </block>
+  </view>
+  <view class="line2">
+    <block wx:for="{{array3}}" wx:key="this">
+      <view class="row bor-bom">
+        <view>{{item.teacher}}</view>
+        <view>{{item.courseType}}</view>
+        <view>{{item.courseName}}</view>
+        <view>{{item.classTime}}</view>
+      </view>
+    </block>
+  </view>
+</scroll-view>

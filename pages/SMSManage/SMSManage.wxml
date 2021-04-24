@@ -1,0 +1,49 @@
+<view class="box">
+  <view class="header">
+
+  </view>
+  <view class="content">
+    <view class="line">
+        <view>预约成功提醒</view>
+        <view>
+          <switch checked="{{isChecked1}}" bindchange="switchChange" />
+        </view>
+    </view>
+    <view class="line">
+        <view>取消成功提醒</view>
+        <view>
+          <switch checked="{{isChecked2}}" bindchange="switchChange2" />
+        </view>
+    </view>
+    <view class="line">
+        <view>开课前提醒</view>
+        <view>
+          <switch checked="{{isChecked3}}" bindchange="switchChange3" />
+        </view>
+    </view>
+    <view class="line">
+        <view>签到提醒</view>
+        <view>
+          <switch checked="{{isChecked4}}" bindchange="switchChange4" />
+        </view>
+    </view>
+    <view class="line">
+        <view>预约排队成功提醒</view>
+        <view>
+          <switch checked="{{isChecked5}}" bindchange="switchChange5" />
+        </view>
+    </view>
+    <view class="line">
+        <view>课程人数不足自动取消提醒</view>
+        <view>
+          <switch checked="{{isChecked6}}" bindchange="switchChange6" />
+        </view>
+    </view>
+    <view class="line">
+        <view>停课自动取消预约提醒</view>
+        <view>
+          <switch checked="{{isChecked7}}" bindchange="switchChange7" />
+        </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "wordview2": "/components/wordview2/wordview2"
+  }
+}

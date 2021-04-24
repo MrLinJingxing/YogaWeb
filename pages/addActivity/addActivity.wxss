@@ -1,0 +1,21 @@
+.box {
+  padding-left: 30rpx;
+  border-top: 20rpx solid #eee;
+}
+.line {
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #eee;
+  padding-right: 30rpx;
+}
+.line input {
+  text-align: right;
+}
+.button {
+  margin-top: 20rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}

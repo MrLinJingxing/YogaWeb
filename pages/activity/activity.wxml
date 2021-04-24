@@ -1,0 +1,47 @@
+<view class="swiper-tab">
+  <block wx:for="{{courses}}" wx:key="name">
+    <view class="swiper-tab-item {{currentTab==index?'active':''}}" data-current="{{index}}" bindtap="clickTab">
+      {{item.name}}
+    </view>
+  </block>
+</view>
+<swiper current="{{currentTab}}" bindchange="swiperTab">
+  <!-- 进行中 -->
+  <swiper-item>
+    <block bindtap="details" wx:for="{{inProgress}}" wx:key="">
+      <view class="block">
+        <view class="title">{{item.title}}</view>
+        <view class="block-main">
+          <view class="block-img">
+            <image mode="widthFix" src="{{item.url}}"></image>
+          </view>
+          <view>
+            <view class="height">{{item.cardName}}</view>
+            <view class="time height"><view class="time-1">卡期限：</view>{{item.cardTime}}</view>
+            <view class="price height">
+              <view class="price-1">秒杀价：</view>
+              <view class="price-2">￥ {{item.Price}}</view>
+            </view>
+          </view>
+        </view>
+        <view class="look">查看活动</view>
+      </view>
+    </block>
+  </swiper-item>
+
+  <!-- 未开始 -->
+  <swiper-item>
+    <block wx:for="{{}}" wx:key="">
+    </block>
+  </swiper-item>
+
+  <!-- 已过期 -->
+  <swiper-item>
+    <block wx:for="{{}}" wx:key="">
+    </block>
+  </swiper-item>
+</swiper>
+
+<view class="fixed" bindtap="gotoAddActivity">
+  <image src="/pages/img/addActivity.png"></image>
+</view>

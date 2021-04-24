@@ -1,0 +1,12 @@
+.difficulty {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.difficulty-1 {
+  margin-right: 17rpx;
+}
+.stars image {
+  width: 35rpx;
+  height: 35rpx;
+}

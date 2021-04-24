@@ -1,0 +1,72 @@
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 80rpx;
+  padding: 0 25rpx;
+  box-sizing: border-box;
+}
+
+.c-top {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 20rpx solid #eee;
+}
+
+.block {
+  width: 25%;
+  text-align: center;
+  border-left: 1rpx solid #eee;
+  padding: 25rpx 10rpx;
+  box-sizing: border-box;
+}
+
+/* 课时 */
+.scroll {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+}
+.line {
+  width: 160%;
+  height: auto;
+  background-color: #fff;
+  border-top: 20rpx solid #eee;
+  border-bottom: 20rpx solid #eee;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 50rpx;
+}
+.line-height {
+  height: 80rpx;
+  font-weight: 700;
+}
+.line2 {
+  width: 160%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+.bor-bom {
+  border-bottom: 1rpx solid #eee;
+  height: 78rpx;
+  line-height: 78rpx;
+  padding-right: 20rpx;
+}
+.row view {
+  width: 200rpx;
+  margin-left: 15rpx;
+}

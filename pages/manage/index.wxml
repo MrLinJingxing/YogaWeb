@@ -1,0 +1,29 @@
+<view class="box">
+  <view class="header"> 
+    <block wx:if="{{!hasUserInfo}}">
+      <view class="portrait" bindtap="getUserProfile">
+        <open-data type="userAvatarUrl" default-avatar="http://434540.s81i.faiusr.com/2/101/AFEI7MIaEAIYACDrqc3jBSjqpfT6AjDuBTjoAkBl.jpg"></open-data>
+      </view>
+      <text>请点击登录</text>
+    </block>
+    <block wx:elif="{{hasUserInfo}}">
+      <view class="portrait" bindtap="getUserProfile">
+        <image class="portrait" src="{{userInfo.avatarUrl}}"></image>
+      </view>
+      <text>{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+  <!-- 主体内容 -->
+  <view>
+    <view class="page__bd">
+        <view class="weui-grids">
+            <block wx:for-items="{{course}}" wx:key="id">
+                <view bindtap="getindex" data-index="{{item.id}}" class="weui-grid" hover-class="weui-grid_active">
+                    <view class="weui-grid__label">{{item.name}}</view>
+                </view>
+            </block>
+        </view>
+    </view>
+  </view>
+</view>

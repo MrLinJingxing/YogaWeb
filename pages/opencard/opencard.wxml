@@ -1,0 +1,78 @@
+<view class="box">
+  <view class="card">
+    <view class="title">会员发卡</view>
+    <view class="main">
+      <view class="input">
+        <input type="text" placeholder="请输入会员姓名" value="{{va1}}" bindinput="obtain1" />
+        <view class="icon" wx:if="{{isClear1}}" bindtap="clear1" s>
+          <image src="{{clear}}"></image>
+        </view>
+      </view>
+      <view class="input">
+        <input type="text" placeholder="请输入手机号码" value="{{va2}}" bindinput="obtain2" />
+        <view class="icon" wx:if="{{isClear2}}" bindtap="clear2" s>
+          <image src="{{clear}}"></image>
+        </view>
+      </view>
+      <view class="input">
+        <input type="text" placeholder="请输入支付方式" value="{{va3}}" bindinput="obtain3" />
+        <view class="icon" wx:if="{{isClear3}}" bindtap="clear3" s>
+          <image src="{{clear}}"></image>
+        </view>
+      </view>
+      <view class="li" data-index="3" bindtap='changeToggle'>
+          <button id="width" plain style="margin-top: 20rpx; width: 100%; height: 80rpx">请选择会员卡<image wx:if="{{selectedFlag[3]}}" src="{{top}}"></image>
+            <image wx:if="{{!selectedFlag[3]}}" src="{{bottom}}"></image>
+          </button>
+          <text class="iconfont {{selectedFlag[3]?'icon-shangjiantou':'icon-xiala'}}"> </text>
+      </view>
+      <view class="li2" hidden="{{!selectedFlag[3]}}">
+        <checkbox-group bindchange="checkboxChange">
+          <label class="weui-cell weui-check__label" wx:for="{{items}}" wx:key="value">
+            <view class="weui-cell__hd">
+              <checkbox value="{{item.name}}" checked="{{item.checked}}" />
+            </view>
+            <view class="weui-cell__bd" style="margin-left: 15rpx">{{item.name}}</view>
+          </label>
+        </checkbox-group>
+      </view>
+      <view class="input">
+        <input type="text" placeholder="请输入会员卡次，不限次卡不用填" value="{{va4}}" bindinput="obtain4" />
+        <view class="icon" wx:if="{{isClear4}}" bindtap="clear4" s>
+          <image src="{{clear}}"></image>
+        </view>
+      </view>
+      <view class="li" data-index="3" bindtap='changeToggle2'>
+          <button id="width" plain style="margin-top: 20rpx; width: 100%; height: 80rpx">请选择期限
+            <image wx:if="{{selectedFlag2[3]}}" src="{{top}}"></image>
+            <image wx:if="{{!selectedFlag2[3]}}" src="{{bottom}}"></image>
+          </button>
+          <text class="iconfont {{selectedFlag2[3]?'icon-shangjiantou':'icon-xiala'}}"> </text>
+      </view>
+      <view class="li2" hidden="{{!selectedFlag2[3]}}">
+        <checkbox-group bindchange="checkboxChange2">
+          <label class="weui-cell weui-check__label" wx:for="{{items2}}" wx:key="value">
+            <view class="weui-cell__hd">
+              <checkbox value="{{item.name}}" checked="{{item.checked}}" />
+            </view>
+            <view class="weui-cell__bd" style="margin-left: 15rpx">{{item.name}}</view>
+          </label>
+        </checkbox-group>
+      </view>
+      <view class="input">
+        <input type="text" placeholder="请输入发卡人" value="{{va5}}" bindinput="obtain5" />
+        <view class="icon" wx:if="{{isClear5}}" bindtap="clear5" s>
+          <image src="{{clear}}"></image>
+        </view>
+      </view>
+      <view class="button">
+        <button type="primary">确定发卡</button>
+      </view>
+    </view>
+  </view>
+
+  <view class="record" bindtap="gotorecord">
+    <view>发卡记录</view>
+    <view>></view>
+  </view>
+</view>

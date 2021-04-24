@@ -1,0 +1,87 @@
+@import "/difficult.wxss";
+
+swiper,
+swiper-item {
+  background-color: #fafafa;
+  height: 100vh;
+}
+
+.swiper-tab {
+  width: 100%;
+  border-bottom: 5rpx solid #eee;
+  text-align: center;
+  height: 90rpx;
+  line-height: 90rpx;
+  display: flex;
+  flex-flow: row;
+  font-size: 32rpx;
+  justify-content: space-between;
+}
+
+.swiper-tab-item {
+  width: 50%;
+  color: #434343;
+}
+
+.active {
+  color: #4fcceb;
+  border-bottom: 2rpx solid #4fcceb;
+  font-weight: 700;
+}
+
+/* 活动块 */
+.block {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+  margin-top: 30rpx;
+  border-radius: 10rpx;
+}
+.title {
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #fff;
+  font-size: 34rpx;
+  border-bottom: 1rpx solid #eee;
+  margin-bottom: 20rpx;
+}
+.block-main,.price,.time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.block-img image {
+  width: 220rpx;
+  margin-right: 28rpx;
+}
+.time-1 {
+  color: #888;
+}
+.price-1 {
+  color: #e90202;
+}
+.price-2 {
+  color: #c70303;
+}
+.height {
+  line-height: 48rpx;
+}
+.look {
+  line-height: 80rpx;
+  border-top: 1rpx solid #eee;
+  margin-top: 20rpx;
+  color: #4fcceb;
+}
+
+/* 添加活动 */
+.fixed {
+  position: fixed;
+  right: 10%;
+  top: 80%;
+}
+.fixed image {
+  width: 80rpx;
+  height: 80rpx;
+}

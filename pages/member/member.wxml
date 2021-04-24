@@ -1,0 +1,3 @@
+<view class="box">
+  <wordview2 bindInfoTap="infoTap" words="{{testData}}" />
+</view>

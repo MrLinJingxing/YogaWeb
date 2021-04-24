@@ -1,0 +1,50 @@
+.box {
+  padding: 30rpx;
+  box-sizing: border-box;
+  background-color: #eee;
+  min-height: 100vh;
+  height: auto;
+}
+
+.block {
+  margin-top: 20rpx;
+  background-color: #fff;
+  padding: 25rpx 35rpx;
+  border-radius: 20rpx;
+}
+
+.margin-right {
+  margin-right: 25rpx;
+}
+
+.courseName {
+  margin-left: 100rpx;
+}
+
+.b-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.b-row image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.border-top {
+  margin-top: 20rpx;
+  border-top: 1rpx solid #eee;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 80rpx;
+}
